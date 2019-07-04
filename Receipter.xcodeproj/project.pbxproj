@@ -13,6 +13,9 @@
 		A90B8AF722CE6463002126B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A90B8AF622CE6463002126B0 /* Assets.xcassets */; };
 		A90B8AFA22CE6463002126B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A90B8AF822CE6463002126B0 /* LaunchScreen.storyboard */; };
 		A90B8B0522CE6463002126B0 /* ReceipterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90B8B0422CE6463002126B0 /* ReceipterTests.swift */; };
+		A90B8B1022CE648F002126B0 /* ReceipterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90B8B0F22CE648F002126B0 /* ReceipterTest.swift */; };
+		A90B8B1222CE94DC002126B0 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90B8B1122CE94DC002126B0 /* Order.swift */; };
+		A90B8B1422CE94F6002126B0 /* OrderLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90B8B1322CE94F6002126B0 /* OrderLine.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,9 @@
 		A90B8B0022CE6463002126B0 /* ReceipterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReceipterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A90B8B0422CE6463002126B0 /* ReceipterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceipterTests.swift; sourceTree = "<group>"; };
 		A90B8B0622CE6463002126B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A90B8B0F22CE648F002126B0 /* ReceipterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceipterTest.swift; sourceTree = "<group>"; };
+		A90B8B1122CE94DC002126B0 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		A90B8B1322CE94F6002126B0 /* OrderLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderLine.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +83,7 @@
 		A90B8AEE22CE6453002126B0 /* Receipter */ = {
 			isa = PBXGroup;
 			children = (
+				A90B8B1522CE9512002126B0 /* Receipter */,
 				A90B8AEF22CE6453002126B0 /* AppDelegate.swift */,
 				A90B8AF122CE6453002126B0 /* ViewController.swift */,
 				A90B8AF322CE6453002126B0 /* Main.storyboard */,
@@ -94,6 +101,16 @@
 				A90B8B0622CE6463002126B0 /* Info.plist */,
 			);
 			path = ReceipterTests;
+			sourceTree = "<group>";
+		};
+		A90B8B1522CE9512002126B0 /* Receipter */ = {
+			isa = PBXGroup;
+			children = (
+				A90B8B0F22CE648F002126B0 /* ReceipterTest.swift */,
+				A90B8B1322CE94F6002126B0 /* OrderLine.swift */,
+				A90B8B1122CE94DC002126B0 /* Order.swift */,
+			);
+			path = Receipter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,7 +214,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A90B8B1422CE94F6002126B0 /* OrderLine.swift in Sources */,
+				A90B8B1022CE648F002126B0 /* ReceipterTest.swift in Sources */,
 				A90B8AF222CE6453002126B0 /* ViewController.swift in Sources */,
+				A90B8B1222CE94DC002126B0 /* Order.swift in Sources */,
 				A90B8AF022CE6453002126B0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -363,11 +383,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 447M47227T;
 				INFOPLIST_FILE = Receipter/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.onomatopoeia.Receipter;
+				PRODUCT_BUNDLE_IDENTIFIER = "-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -381,11 +402,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 447M47227T;
 				INFOPLIST_FILE = Receipter/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.onomatopoeia.Receipter;
+				PRODUCT_BUNDLE_IDENTIFIER = "-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
